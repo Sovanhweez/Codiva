@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CODIVA - Professional Web Development & Mobile App Solutions | Kurdistan, Iraq</title>
+    <meta name="description" content="CODIVA - Leading web development company in Kurdistan, Iraq. Expert mobile apps, custom software, React/Vue development, and digital solutions for businesses.">
+    <meta name="keywords" content="web development, mobile apps, custom software, React, Vue, Angular, Flutter, Kurdistan, Iraq, Erbil, programming, digital solutions">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="CODIVA">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="CODIVA - Professional Web Development Solutions">
+    <meta property="og:description" content="Leading web development company in Kurdistan, Iraq. Expert mobile apps, custom software, and digital solutions for businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codiva.com">
+    <meta property="og:image" content="https://codiva.com/logo.png">
+    <meta property="og:site_name" content="CODIVA">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CODIVA - Professional Web Development Solutions">
+    <meta name="twitter:description" content="Leading web development company in Kurdistan, Iraq. Expert mobile apps and digital solutions.">
+    <meta name="twitter:image" content="https://codiva.com/logo.png">
+    
+    <!-- Business Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CODIVA",
+      "description": "Professional programming company offering web development, mobile apps, and custom software solutions.",
+      "url": "https://codiva.com",
+      "logo": "https://codiva.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+964-750-765-0999",
+        "contactType": "customer service",
+        "areaServed": "IQ",
+        "availableLanguage": ["en", "ar", "ku"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Kurdistan",
+        "addressCountry": "Iraq"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/codivaco",
+        "https://www.facebook.com/share/19UDaECziM/",
+        "https://www.instagram.com/codiva.co"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "CODIVA Team"
+      },
+      "foundingDate": "2021",
+      "serviceArea": {
+        "@type": "Place",
+        "name": "Kurdistan, Iraq"
+      }
+    }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <h1>CODIVA</h1>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+    <div class="scroll-indicator" id="scrollIndicator" aria-hidden="true"></div>
+
+    <div class="particles" id="particles" aria-hidden="true"></div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/+9647507650999" 
+           class="whatsapp-button" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           aria-label="Contact us on WhatsApp"
+           title="Chat with us on WhatsApp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+        
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+            <i class="fas fa-arrow-up" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo" aria-label="CODIVA Home">
+                <img src="logo.png" alt="CODIVA Logo">
+            </a>
+
+            <nav class="nav-menu" role="navigation">
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#services" class="nav-link">Our Services</a>
+                <a href="#website-creation" class="nav-link">Website</a>
+                <a href="#mobile-app" class="nav-link"> Mobile App</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                
+                
+                <!-- Mobile Social Media Section -->
+                <!-- <div class="mobile--section ">
+                    <div class="mobile-social-section">
+                     <div class="">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://github.com/codiva" target="_blank" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com/company/codiva" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/codiva" target="_blank" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/codiva" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            </div> -->
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="floating-element" aria-hidden="true"></div>
+            <div class="floating-element" aria-hidden="true"></div>
+            <div class="floating-element" aria-hidden="true"></div>
+            
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>
+                        <span class="word">Bring</span>
+                        <span class="word">Your</span>
+                        <span class="word">Code</span>
+                        <span class="word">To</span>
+                        <span class="word">Life</span>
+                    </h1>
+                    <p>At CODIVA, we craft cutting-edge digital experiences. From sleek websites and powerful mobile apps to intelligent systems and smart technologies, we build solutions that inspire, perform, and evolve with your business.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">
+                            <span>Get Started</span>
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
+                        </a>
+                        <a href="#services" class="btn-secondary">
+                            <span>Our Services</span>
+                            <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="code-editor">
+                        <div class="editor-header">
+                            <div class="editor-button red" aria-hidden="true"></div>
+                            <div class="editor-button yellow" aria-hidden="true"></div>
+                            <div class="editor-button green" aria-hidden="true"></div>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line"><span class="comment">// Welcome to CODIVA</span></div>
+                            <div class="code-line"><span class="keyword">public class</span> <span class="function">CODIVA</span></div>
+                            <div class="code-line">{</div>
+                            <div class="code-line">  <span class="keyword">public string</span> Vision { <span class="keyword">get;</span> <span class="keyword">set;</span> } = <span class="string">"Empowering the digital future"</span>;</div>
+                            <div class="code-line"></div>
+                            <div class="code-line">  <span class="keyword">public string</span> BuildSolution()</div>
+                            <div class="code-line">  {</div>
+                            <div class="code-line">    <span class="keyword">return</span> <span class="string">"Smart. Scalable. Beautiful."</span>;</div>
+                            <div class="code-line">  }</div>
+                            <div class="code-line">}</div>
+                            <div class="code-line"></div>
+                            <div class="code-line typing-effect"><span class="function">Console</span>.<span class="function">WriteLine</span>(<span class="string">"Welcome to the future of code."</span>);</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+    <div class="stats-container">
+        <!-- Projects -->
+        <div class="stat-item reveal">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Custom Digital Solutions Delivered</div>
+        </div>
+
+        <!-- Client Satisfaction -->
+        <div class="stat-item reveal">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Client Satisfaction Rate</div>
+        </div>
+
+        <!-- Experience -->
+        <div class="stat-item reveal">
+            <div class="stat-number">Expertise</div>
+            <div class="stat-label">Proven Industry Knowledge</div>
+        </div>
+
+        <!-- Support -->
+        <div class="stat-item reveal">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Dedicated Support</div>
+        </div>
+    </div>
+</section>
+
+    <section class="about" id="about">
+    <div class="about-container">
+        <!-- Section Title -->
+        <div class="section-title reveal">
+            <h2>About CODIVA</h2>
+            <p>Passionate developers crafting innovative digital solutions</p>
+        </div>
+
+        <div class="about-content">
+            <!-- Our Story -->
+            <div class="about-story reveal">
+                <h3>Our Story</h3>
+                <p>Born out of a passion for turning ideas into exceptional digital experiences, CODIVA is a team of driven developers and designers dedicated to creating software that transforms businesses and enhances lives.</p>
+                <p>Headquartered in Erbil, Kurdistan, we collaborate with clients across the Middle East and beyond—blending local insight with global standards to deliver impactful, high-quality digital solutions.</p>
+            </div>
+
+            <!-- Our Values -->
+            <div class="about-values reveal">
+                <h3>Our Values</h3>
+                <div class="values-grid">
+                    <div class="value-item stagger-item">
+                        <div class="value-icon">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>Excellence</h4>
+                        <p>We pursue excellence in every detail—from clean code to polished interfaces and seamless client experiences.</p>
+                    </div>
+
+                    <div class="value-item stagger-item">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake" aria-hidden="true"></i>
+                        </div>
+                        <h4>Partnership</h4>
+                        <p>We treat our clients as collaborators, building long-term relationships based on trust and shared success.</p>
+                    </div>
+
+                    <div class="value-item stagger-item">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                        </div>
+                        <h4>Innovation</h4>
+                        <p>We stay ahead by embracing emerging technologies and crafting creative, future-ready solutions.</p>
+                    </div>
+
+                    <div class="value-item stagger-item">
+                        <div class="value-icon">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <h4>Reliability</h4>
+                        <p>We deliver consistent quality—on time, every time—backed by dependable support you can count on.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+        <!-- Our Project Section -->
+<section class="about" id="about">
+    <div class="about-container">
+        <!-- Section Title -->
+        <div class="section-title reveal">
+            <h2>Our Projects</h2>
+        </div>
+
+        <div class="about-content">
+            <!-- Our Story -->
+            <div class="about-story reveal">
+                <p>At CODIVA, we're building the future of digital solutions. Our flagship project represents years of innovation, combining cutting-edge technology with user-centered design to create platforms that transform businesses and enhance user experiences across the digital landscape.</p>
+            </div>
+            <div style="margin-top: 3rem; text-align: center;">
+        <a href="projects-index.html" class="learn-more-btn reveal">
+            <span>Learn More</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+        </div>
+    </div>
+</section>
+
+
+        <section class="services" id="services">
+            <div class="services-container">
+                <div class="section-title reveal">
+                    <h2>Our Services</h2>
+                    <p>Tailored IT solutions to launch, scale, and sustain your digital presence</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card stagger-item">
+                        <div class="service-icon">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>We build responsive, high-performance websites using modern frameworks like React, Vue, and Angular — optimized for scalability and SEO.</p>
+                    </div>
+
+                    <div class="service-card stagger-item">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3>Mobile Applications</h3>
+                        <p>Native-like mobile experiences for iOS and Android using Flutter and React Native — built for usability and speed.</p>
+                    </div>
+
+                    <div class="service-card stagger-item">
+                        <div class="service-icon">
+                            <i class="fas fa-pencil-ruler" aria-hidden="true"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>We design user-first interfaces that are clean, intuitive, and aligned with your brand — turning ideas into delightful digital experiences.</p>
+                    </div>
+
+                    <div class="service-card stagger-item">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs" aria-hidden="true"></i>
+                        </div>
+                        <h3>Custom Software</h3>
+                        <p>Tailored systems and tools built to solve unique business challenges — from automation to enterprise platforms.</p>
+                    </div>
+
+                    <div class="service-card stagger-item">
+                        <div class="service-icon">
+                            <i class="fas fa-tools" aria-hidden="true"></i>
+                        </div>
+                        <h3>Maintenance & Support</h3>
+                        <p>Ongoing technical support, monitoring, and performance optimization — we ensure your platforms run smoothly 24/7.</p>
+                    </div>
+
+                    <div class="service-card stagger-item">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud" aria-hidden="true"></i>
+                        </div>
+                        <h3>Cloud & DevOps</h3>
+                        <p>Scalable cloud infrastructure, CI/CD pipelines, and deployment solutions — empowering efficient, agile development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="website-creation" id="website-creation">
+            <div class="creation-container">
+                <div class="section-title reveal">
+                    <h2>How to Build a Website?</h2>
+                    <p>A complete guide to building a modern, professional website.</p>
+                </div>
+                
+                <div class="creation-steps">
+                    <div class="step-timeline reveal">
+                        <div class="timeline-line" aria-hidden="true"></div>
+                        
+                        <div class="creation-step stagger-item">
+                            <div class="step-icon">
+                                <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Planning & Design</h3>
+                                <p>The first step is planning your website. Define goals, target audience, and required content. Create wireframes and mockups.</p>
+                                <div class="step-details">
+                                    <span class="detail-tag">Discovery</span>
+                                    <span class="detail-tag">UI/UX Design</span>
+                                    <span class="detail-tag">Prototype</span>
+                                </div>
+                            </div>
+                            <div class="step-number" aria-hidden="true">01</div>
+                        </div>
+                        
+                        <div class="creation-step stagger-item">
+                            <div class="step-icon">
+                                <i class="fas fa-code" aria-hidden="true"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Frontend Development</h3>
+                                <p>Building the client-side of the website using HTML, CSS, and JavaScript, and utilizing frameworks like React or Vue.</p>
+                                <div class="step-details">
+                                    <span class="detail-tag">HTML5</span>
+                                    <span class="detail-tag">CSS3</span>
+                                    <span class="detail-tag">JavaScript</span>
+                                    <span class="detail-tag">React/Vue</span>
+                                </div>
+                            </div>
+                            <div class="step-number" aria-hidden="true">02</div>
+                        </div>
+                        
+                        <div class="creation-step stagger-item">
+                            <div class="step-icon">
+                                <i class="fas fa-server" aria-hidden="true"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Backend Development</h3>
+                                <p>Developing the server, database, and APIs to manage data and website logic.</p>
+                                <div class="step-details">
+                                    <span class="detail-tag">Node.js</span>
+                                    <span class="detail-tag">Python</span>
+                                    <span class="detail-tag">PHP</span>
+                                    <span class="detail-tag">MySQL/MongoDB/Firebase</span>
+                                    <span class="detail-tag">API</span>
+                                </div>
+                            </div>
+                            <div class="step-number" aria-hidden="true">03</div>
+                        </div>
+                        
+                        <div class="creation-step stagger-item">
+                            <div class="step-icon">
+                                <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Responsive Design</h3>
+                                <p>Ensuring the website functions perfectly on all devices, including mobile phones, tablets, and desktops.</p>
+                                <div class="step-details">
+                                    <span class="detail-tag">Mobile-First</span>
+                                    <span class="detail-tag">Flexbox</span>
+                                    <span class="detail-tag">Grid System</span>
+                                </div>
+                            </div>
+                            <div class="step-number" aria-hidden="true">04</div>
+                        </div>
+                        
+                        <div class="creation-step stagger-item">
+                            <div class="step-icon">
+                                <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Security & Optimization</h3>
+                                <p>Implementing security measures, speeding up load times, and optimizing for SEO.</p>
+                                <div class="step-details">
+                                    <span class="detail-tag">SSL</span>
+                                    <span class="detail-tag">SEO</span>
+                                    <span class="detail-tag">Performance</span>
+                                    <span class="detail-tag">Security</span>
+                                </div>
+                            </div>
+                            <div class="step-number" aria-hidden="true">05</div>
+                        </div>
+                        
+                        <div class="creation-step stagger-item">
+                            <div class="step-icon">
+                                <i class="fas fa-rocket" aria-hidden="true"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Testing & Deployment</h3>
+                                <p>Testing the website across various browsers and devices, followed by deployment to a server.</p>
+                                <div class="step-details">
+                                    <span class="detail-tag">Testing</span>
+                                    <span class="detail-tag">Hosting</span>
+                                    <span class="detail-tag">Domain</span>
+                                    <span class="detail-tag">Monitoring</span>
+                                </div>
+                            </div>
+                            <div class="step-number" aria-hidden="true">06</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-showcase reveal">
+                    <h3>Technologies We Use</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card stagger-item">
+                            <div class="tech-logo">
+                                <i class="fab fa-html5" aria-hidden="true"></i>
+                            </div>
+                            <h4>HTML5</h4>
+                            <p>The foundation of every webpage, defining the structure of content.</p>
+                        </div>
+
+                        <div class="tech-card stagger-item">
+                            <div class="tech-logo">
+                                <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                            </div>
+                            <h4>CSS3</h4>
+                            <p>Controls the styling and layout of webpages.</p>
+                        </div>
+
+                        <div class="tech-card stagger-item">
+                            <div class="tech-logo">
+                                <i class="fab fa-js-square" aria-hidden="true"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <p>Adds functionality and interactivity to a website.</p>
+                        </div>
+
+                        <div class="tech-card stagger-item">
+                            <div class="tech-logo">
+                                <i class="fab fa-react" aria-hidden="true"></i>
+                            </div>
+                            <h4>React</h4>
+                            <p>A powerful framework for building advanced user interfaces.</p>
+                        </div>
+
+                        <div class="tech-card stagger-item">
+                            <div class="tech-logo">
+                                <i class="fab fa-php" aria-hidden="true"></i>
+                            </div>
+                            <h4>PHP</h4>
+                            <p>A server-side language for creating pages and managing data.</p>
+                        </div>
+
+                        <div class="tech-card stagger-item">
+                            <div class="tech-logo">
+                                <i class="fas fa-database" aria-hidden="true"></i>
+                            </div>
+                            <h4>Database</h4>
+                            <p>For storing and managing data.</p>
+                        </div>
+
+                        <div class="tech-card stagger-item">
+                            <div class="tech-logo">
+                                <i class="fab fa-google-play" aria-hidden="true"></i>
+                            </div>
+                            <h4>Flutter</h4>
+                            <p>Develop mobile apps for both iOS and Android systems.</p>
+                        </div>
+
+                        <div class="tech-card stagger-item">
+                            <div class="tech-logo">
+                                <i class="fas fa-robot" aria-hidden="true"></i>
+                            </div>
+                            <h4>AI</h4>
+                            <p>Solutions using artificial intelligence and machine learning.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="creation-tips reveal">
+                    <h3>Helpful Tips</h3>
+                    <div class="tips-grid">
+                        <div class="tip-card stagger-item">
+                            <div class="tip-icon">
+                                <i class="fas fa-users" aria-hidden="true"></i>
+                            </div>
+                            <h4>Think About the User</h4>
+                            <p>Always think from the user's perspective. Create a simple and easy-to-use design.</p>
+                        </div>
+                        
+                        <div class="tip-card stagger-item">
+                            <div class="tip-icon">
+                                <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+                            </div>
+                            <h4>Speed is Key</h4>
+                            <p>A fast website is crucial. Optimize images and use minimal code.</p>
+                        </div>
+                        
+                        <div class="tip-card stagger-item">
+                            <div class="tip-icon">
+                                <i class="fas fa-lock" aria-hidden="true"></i>
+                            </div>
+                            <h4>Security</h4>
+                            <p>Protecting data and the website is vital. Use HTTPS and strong passwords.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="creation-cta reveal">
+                    <div class="cta-content">
+                        <h3>Ready to Get Started?</h3>
+                        <p>We can help you build your website, from planning all the way to deployment.</p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn-primary">
+                                <span>Contact Us</span>
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                            <a href="#services" class="btn-secondary">
+                                <span>Our Services</span>
+                                <i class="fas fa-eye" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cta-visual">
+                        <div class="floating-code">
+                            <div class="code-snippet">
+                                <span class="code-line">&lt;<span class="tag">html</span>&gt;</span>
+                                <span class="code-line">  &lt;<span class="tag">head</span>&gt;</span>
+                                <span class="code-line">    &lt;<span class="tag">title</span>&gt;My New Project&lt;/<span class="tag">title</span>&gt;</span>
+                                <span class="code-line">  &lt;/<span class="tag">head</span>&gt;</span>
+                                <span class="code-line">  &lt;<span class="tag">body</span>&gt;</span>
+                                <span class="code-line">    &lt;<span class="tag">h1</span>&gt;Welcome to My Website&lt;/<span class="tag">h1</span>&gt;</span>
+                                <span class="code-line">    &lt;<span class="tag">p</span>&gt;This is the first page of the project&lt;/<span class="tag">p</span>&gt;</span>
+                                <span class="code-line">  &lt;/<span class="tag">body</span>&gt;</span>
+                                <span class="code-line">&lt;/<span class="tag">html</span>&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Restaurant Menu Section -->
+<section class="restaurant-menu" id="menu">
+    <div class="menu-container">
+        <!-- Section Title -->
+        <div class="section-title reveal">
+            <h2>Smart Digital Menus for Modern Restaurants</h2>
+            <p>At CODIVA, we design visually appealing and user-friendly digital menus that drive sales and elevate the dining experience.</p>
+        </div>
+
+        <!-- Menu Creation Steps -->
+        <div class="menu-creation-steps">
+            <div class="menu-steps-grid">
+                <!-- Step 1 -->
+                <div class="menu-step-card stagger-item">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Strategy & Design</h3>
+                    <p>We begin by crafting a visually compelling and strategically organized menu that reflects your restaurant’s brand and boosts conversions.</p>
+                    <ul class="step-features">
+                        <li>Menu structure & food categorization</li>
+                        <li>Custom UI/UX tailored to your brand</li>
+                        <li>Font, color, and layout harmonization</li>
+                        <li>High-quality image integration</li>
+                    </ul>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="menu-step-card stagger-item">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile-Optimized Development</h3>
+                    <p>We build fully responsive menus that offer seamless navigation on all devices, with a focus on mobile usability.</p>
+                    <ul class="step-features">
+                        <li>Mobile-first approach</li>
+                        <li>Intuitive touch gestures</li>
+                        <li>Optimized for speed & performance</li>
+                        <li>Smooth, responsive interfaces</li>
+                    </ul>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="menu-step-card stagger-item">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Integrated Ordering System</h3>
+                    <p>Enable customers to place orders directly through your digital menu with real-time processing and secure payments.</p>
+                    <ul class="step-features">
+                        <li>Built-in shopping cart</li>
+                        <li>Secure payment integration</li>
+                        <li>Live order tracking & management</li>
+                        <li>Instant notifications & status updates</li>
+                    </ul>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="menu-step-card stagger-item">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics & Smart Insights</h3>
+                    <p>Track your performance with real-time analytics and generate insights to help grow your business.</p>
+                    <ul class="step-features">
+                        <li>Detailed sales reports</li>
+                        <li>Customer behavior analytics</li>
+                        <li>Revenue tracking</li>
+                        <li>AI-based product recommendations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Types -->
+        <div class="menu-types reveal">
+            <h3>Digital Menu Formats We Offer</h3>
+            <div class="menu-types-grid">
+                <!-- QR Code Menu -->
+                <div class="menu-type-card stagger-item">
+                    <div class="menu-type-icon">
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                    <h4>QR Code Menu</h4>
+                    <p>Guests scan a QR code to access the menu instantly—no apps, no hassle.</p>
+                </div>
+
+                <!-- Web Menu -->
+                <div class="menu-type-card stagger-item">
+                    <div class="menu-type-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h4>Web Menu</h4>
+                    <p>Host a full-featured digital menu on your website with ordering, payment, and delivery options built-in.</p>
+                </div>
+
+                <!-- Mobile App -->
+                <div class="menu-type-card stagger-item">
+                    <div class="menu-type-icon">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <h4>Mobile App</h4>
+                    <p>Provide a seamless experience with a dedicated app tailored to your restaurant, optimized for repeat orders.</p>
+                </div>
+            </div>
+        </div>
+
+
+                <!-- Live Menu Preview -->
+                <div class="menu-preview reveal">
+                    <div class="menu-preview-content">
+                        <h3>Live Menu Preview</h3>
+                        <p>This is a sample of the digital menu we create</p>
+                        
+                        <div class="preview-mockup">
+                            <div class="mockup-header">
+                                <h4>Taste Restaurant</h4>
+                                <p>Fresh & Delicious Food</p>
+                            </div>
+                            
+                            <div class="menu-items">
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h5>Special Kebab</h5>
+                                        <p>Premium meat with fresh vegetables</p>
+                                    </div>
+                                    <div class="item-price">$15.00</div>
+                                </div>
+                                
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h5>Margherita Pizza</h5>
+                                        <p>Fresh cheese and tomatoes</p>
+                                    </div>
+                                    <div class="item-price">$12.00</div>
+                                </div>
+                                
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h5>Caesar Salad</h5>
+                                        <p>Lettuce with special sauce</p>
+                                    </div>
+                                    <div class="item-price">$8.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="menu-cta reveal">
+                    <div class="menu-cta-content">
+                        <h3>Ready to Create Your Menu?</h3>
+                        <p>We help you create a beautiful and effective digital menu that increases your sales</p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn-primary">
+                                <span>Contact Us</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#services" class="btn-secondary">
+                                <span>Our Services</span>
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Mobile App Development Section -->
+        <section class="mobile-app-development" id="mobile-app">
+            <div class="app-container">
+                <div class="section-title reveal">
+                    <h2>Mobile App Development</h2>
+                    <p>We create powerful, user-friendly mobile applications that engage your audience and drive business growth across iOS, Android, and cross-platform solutions.</p>
+                </div>
+
+                <!-- App Types -->
+                <div class="app-types">
+                    <h3>Types of Mobile Apps We Build</h3>
+                    <div class="app-types-grid">
+                        <div class="app-type-card stagger-item">
+                            <div class="app-type-icon">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <h4>Native iOS Apps</h4>
+                            <p>Built specifically for Apple devices using Swift and Objective-C, delivering optimal performance and seamless integration with iOS features.</p>
+                            <ul class="app-features">
+                                <li>Swift & Objective-C development</li>
+                                <li>App Store optimization</li>
+                                <li>iOS-specific UI/UX design</li>
+                                <li>Core iOS framework integration</li>
+                                <li>Push notifications & iCloud sync</li>
+                            </ul>
+                        </div>
+
+                        <div class="app-type-card stagger-item">
+                            <div class="app-type-icon">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <h4>Native Android Apps</h4>
+                            <p>Developed using Kotlin and Java, optimized for Android devices with full access to Google Play Store and Android ecosystem.</p>
+                            <ul class="app-features">
+                                <li>Kotlin & Java development</li>
+                                <li>Material Design principles</li>
+                                <li>Google Play Store deployment</li>
+                                <li>Android SDK integration</li>
+                                <li>Google Services integration</li>
+                            </ul>
+                        </div>
+
+                        <div class="app-type-card stagger-item">
+                            <div class="app-type-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>Cross-Platform Apps</h4>
+                            <p>Single codebase applications using Flutter and React Native, reducing development time while maintaining native performance.</p>
+                            <ul class="app-features">
+                                <li>Flutter & React Native</li>
+                                <li>Single codebase for both platforms</li>
+                                <li>Native-like performance</li>
+                                <li>Faster development & deployment</li>
+                                <li>Cost-effective solution</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Development Process -->
+                <div class="app-development-process">
+                    <div class="process-content">
+                        <h3>Our App Development Process</h3>
+                        <div class="process-steps">
+                            <div class="process-step stagger-item">
+                                <div class="process-step-number">1</div>
+                                <h4>Discovery & Planning</h4>
+                                <p>We analyze your requirements, target audience, and business goals to create a comprehensive app strategy and roadmap.</p>
+                            </div>
+
+                            <div class="process-step stagger-item">
+                                <div class="process-step-number">2</div>
+                                <h4>UI/UX Design</h4>
+                                <p>Creating intuitive and engaging user interfaces with wireframes, prototypes, and pixel-perfect designs.</p>
+                            </div>
+
+                            <div class="process-step stagger-item">
+                                <div class="process-step-number">3</div>
+                                <h4>Development</h4>
+                                <p>Building your app using modern technologies and best practices, with regular updates and milestone deliveries.</p>
+                            </div>
+
+                            <div class="process-step stagger-item">
+                                <div class="process-step-number">4</div>
+                                <h4>Testing & QA</h4>
+                                <p>Comprehensive testing across devices, platforms, and scenarios to ensure bug-free, optimal performance.</p>
+                            </div>
+
+                            <div class="process-step stagger-item">
+                                <div class="process-step-number">5</div>
+                                <h4>Launch & Support</h4>
+                                <p>App store submission, launch strategy execution, and ongoing maintenance and feature updates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <!-- CTA Section -->
+                <div class="app-cta reveal">
+                    <div class="app-cta-content">
+                        <h3>Ready to Build Your Mobile App?</h3>
+                        <p>Transform your idea into a powerful mobile application that users love. Let's discuss your project and bring your vision to life!</p>
+                        <div class="app-cta-buttons">
+                            <a href="#contact" class="btn-primary">
+                                <span>Start Your Project</span>
+                                <i class="fas fa-rocket"></i>
+                            </a>
+                            <a href="#services" class="btn-secondary">
+                                <span>View All Services</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="contact-us" id="contact">
+            <div class="contact-container">
+                <div class="section-title reveal">
+                    <h2>Contact Us</h2>
+                    <p>For questions or requests, get in touch with us.</p>
+                </div>
+                
+
+                <!-- Full Size Map and Contact Form -->
+                <div class="contact-main-grid">
+                    <div class="contact-form-container reveal">
+                        <h3>Send a Message</h3>
+                        <form class="contact-form" method="POST" action="send_email.php" novalidate>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="964 750 123 4567" pattern="[0-9]*" inputmode="numeric" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary">Send</button>
+                        </form>
+                    </div>
+                    
+                    <div class="full-map-section reveal">
+                        <h3>Find Us on the Map</h3>
+                        <div class="full-map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.2386049288636!2d43.99641477543884!3d36.19094709848777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x400236a282903333%3A0x6b84e3c50074213d!2sErbil%20Citadel!5e0!3m2!1sen!2siq!4v1701234567890!5m2!1sen!2siq"
+                                width="600"
+                                height="450"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="CODIVA Location Map">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#services">Web Development</a></li>
+                    <li><a href="#services">Mobile Applications</a></li>
+                    <li><a href="#services">Backend Systems</a></li>
+                    <li><a href="#menu">Restaurant Menu</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#portfolio">Our Work</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <!-- <a href="https://github.com/codiva" target="_blank" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a> -->
+                    <a href="https://www.linkedin.com/in/codivaco" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/share/19UDaECziM/?mibextid=wwXIfr" target="_blank" aria-label="facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/codiva.co?igsh=MWFtYWpobThsZ2Zydg%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2025 CODIVA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
